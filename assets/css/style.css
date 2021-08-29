@@ -1,0 +1,21 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.todos__btn--next {
+    float: right;
+}
+
+.todos__btn--prev {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+

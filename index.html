@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Task-A-Ring | To-Do List</title>
+    <link rel="icon" href="./assets/img/fav-icon.png" sizes="16*16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="text-align: center;" class="mt-5">Task-A-Ring</h3>
+        <h5 style="text-align: center;">Your To-Do List</h5>
+        <form class="mb-5 mt-5">
+            <div class="form-row align-items-center">
+                <div class="col-md-11 col-sm-11 col-xs-11"><input class="form-control" id="todo-input"></div>
+                <div class="col-md-1 col-sm-1 col-xs-1"><button class="btn btn-primary btn-block btn-submit">Add <i
+                            class="fa fa-plus"></i></button></div>
+            </div>
+            <p class="text-danger"></p>
+        </form>
+        <div class="row mb-5">
+            <div class="col-md-8 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Your Tasks</h4>
+                        <p class="text-center mt-4 mb-3 act-todo d-none"><img src="./assets/img/no-tasks.png" alt="" width="250">You do not have any tasks</p>
+                        <ul class="activeTodo list-group"></ul><button class="btn btn-danger clear-all mt-3">Clear Tasks
+                            <i class="fa fa-exclamation-triangle"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card">
+                    <div class="card-body del-todos">
+                        <h4 class="card-title">Recently Deleted Tasks</h4>
+                        <p class="text-center mt-4 mb-3 del-todo d-none"><img src="./assets/img/no-tasks.png" alt="" width="150">No deleted tasks</p>
+                        <ul class="inactiveTodo list-group"></ul>
+                        <div class="buttons"></div><span class="clearfix"></span> <button
+                            class="btn btn-danger btn-block delete-all mt-3">Delete Tasks <i
+                                class="fa fa-exclamation-triangle"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae5cc21294.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/bundle.js"></script>
+   
+</body>
+
+</html>
